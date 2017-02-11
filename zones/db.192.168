@@ -1,0 +1,16 @@
+;
+; BIND reverse data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	ns.home. admin.home. (
+			      1		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+	IN	NS	ns.home.
+7.1   IN      PTR     ns.home. ; 192.168.1.7
+7.1   IN      PTR     pi1.home. ; 192.168.1.7
+130.1   IN      PTR   vbox.home. ; 192.168.1.7
+131.1   IN      PTR   pi2.home. ; 192.168.1.7
